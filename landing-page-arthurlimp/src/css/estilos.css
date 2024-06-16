@@ -1,0 +1,315 @@
+:root{
+    --cor-padrao: #1ED760;
+}
+
+.faixa-header{
+    width: 100%;
+    height: 22px;
+    background-color: rgb(37, 143, 25);
+}
+.cabecalho{  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;/*wrap - Quebra caso não tenha espaço*/
+    padding: 10px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo .titulo{
+    margin-left: 7px;
+    font-size: 17px;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+.logo .imagem{
+    width: 232px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho .navegacao .menu .item{
+    margin: 4px;
+}
+
+.description-header{
+    font-size: 34px;
+    font-weight: bold;
+    color: #1A4A95;
+}
+
+.whatsapp-button{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color:  rgb(41, 167, 26);
+    color: #fff;
+    font-size: 18px;
+    width: 442px;
+    border-radius: 16px;
+    padding: 2px;
+}
+
+.img-whatsapp{
+    width: 52px;
+}
+
+/*******Conteúdo principal (Main)*******/
+.conteudo-principal .paineis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 512px;
+    position: relative;
+}
+
+.conteudo-principal .paineis .imagem-painel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;/*A imagem só aparece com position absolute*/
+    z-index: -1;
+    filter: brightness(90%);/*Brilho em 90%*/
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.conteudo-principal .paineis .projeto1{
+    background-image: url(../images/banner-produtos-de-limpeza.jpg);
+    
+}
+
+
+.conteudo-principal .paineis .imagem-painel.mostrar{
+    opacity: 1;
+}
+
+.conteudo-principal .paineis .titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+}
+
+.conteudo-principal .paineis .seta{
+    background: url(../images/seta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /*Retirar o texto dentro do a*/
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar{
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar{
+    right: 20px;
+    
+}
+
+/**Serviços**/
+
+.servicos{
+    padding: 2% 4%;
+}
+
+.box-servicos{
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+}
+
+.item-servico{
+    width: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.item-servico .icon-servico{
+    height: 60px;
+}
+
+.item-servico .descricao-servico{
+    margin: 8px 0px;
+    font-weight: 700;
+    color: #687271;
+}
+
+.item-servico .span-item-servico{
+    color: rgb(120, 131, 130);
+}
+
+/*******Conteúdo principal (Main)*******/
+.metas{
+    padding: 2% 8%;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titulo{
+    font-size: 32px;
+    color: rgba(11, 73, 109, 0.904);
+    margin-bottom: 20px;
+
+}
+
+.metas .lista-de-metas{
+    margin: 44px 0px;
+}
+
+.metas .lista-de-metas li{
+    margin-bottom: 36px;
+    
+}
+
+.btn-green{
+    padding: 12px;
+    background-color:  rgba(39, 158, 26, 0.925);
+    color: #ffff;
+    border-radius: 8px;
+}
+
+
+/*****atividades*****/
+.atividades{
+    padding: 4% 8%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.box-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0px;
+}
+
+.card{
+    padding: 6px;
+    margin: 6px;
+    width: 272px;
+    height: 378px;
+    color: #202020;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h2{
+    font-size: 17px;
+    margin-top: 10px;
+}   
+
+.card p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/*Marcas*/
+
+.marcas{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 8%;
+    
+}
+
+.box-logo{
+    margin: 0  auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 46px;
+    flex-wrap: wrap;
+ 
+}
+
+
+.logo-fornecedor{
+    width: 90px;
+    height: 60px;
+}
+
+/*Rodape*/
+
+.rodape{
+    padding: 80px 0 20px 0;
+
+}
+
+.rodape .navegacao{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.rodape .redes-sociais{
+    display: flex;
+    align-items: center;
+    max-width: 432px;
+}
+
+.rodape .redes-sociais span{    
+    font-size: 12px;
+}
+
+.rodape .redes-sociais a{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    padding: 15px;
+    width: 65px;
+    transition: 0.2s ease-in-out;
+}
+
+.rodape .redes-sociais a:hover{
+    background-color: var(--cor-padrao);
+}
+
+.rodape .navegacao .logo .imagem{
+    width: 140px;
+}
+
+.rodape .copyright{
+    margin-top: 70px;
+    text-align: center;
+}

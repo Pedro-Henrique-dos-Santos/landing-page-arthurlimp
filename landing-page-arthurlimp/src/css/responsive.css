@@ -1,0 +1,111 @@
+@media(max-width: 624px){
+    .cabecalho{
+        justify-content: center;
+    }
+
+    .cabecalho .logo{
+        margin-bottom: 30px;
+    }
+
+    .cabecalho .menu .item a{
+        font-size: calc(0.6em + 1vw);
+    }
+    .description-header{
+        font-size: 19px;
+    }
+
+    .whatsapp-button{
+        gap: 2px;
+        font-size: 14px;
+        width: 342px;
+        border-radius: 16px;
+        padding: 0px;
+    }
+    .img-whatsapp{
+        width: 42px;
+    }
+
+    .item-servico{
+        width: 182px;
+        font-size: 11px;
+    }
+    .item-servico .icon-servico{
+        height: 42px;
+    }
+
+    .titulo{
+        font-size: 24px;
+    }
+    
+}
+
+@media(max-width: 900px){
+    .conteudo-principal .paineis{
+        height: 500px;
+    }
+    .conteudo-principal .paineis .projeto1{
+        background-image: url(../images/distribuidora-banner-mobile.jpg);
+        
+    }
+}
+
+@media(max-width: 1200px){
+    .quem-somos .conteudo{
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 10px;
+    }
+    .quem-somos .conteudo .imagem{
+        display: none;
+    }
+
+    .quem-somos .conteudo .informacoes{
+        width: 100%;
+    }
+}
+
+@media(max-width: 940px){
+
+    .rodape .navegacao{
+        justify-content: center;
+    }
+
+    .rodape .navegacao .logo{
+        margin-bottom: 30px;
+    }
+
+    .rodape .navegacao .logo,
+    .rodape .navegacao .redes-sociais{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .metas .lista-de-metas{
+        max-width: 100%;
+    }
+    .atividades{
+        margin-top: 40px;
+    }
+
+    .box-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 440px){
+    .cabecalho .navegacao .menu .item{
+        margin: 0px;
+    }
+
+    .quem-somos .conteudo .informacoes .titulo{
+        font-size: 36px;
+       
+    }
+    
+    .quem-somos .conteudo .informacoes .texto{
+        font-size: 15px;
+    }
+
+}

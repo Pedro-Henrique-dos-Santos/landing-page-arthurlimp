@@ -1,0 +1,26 @@
+.faca-uma-doacao{
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.box-doacao{
+  width: 40%;
+}
+
+.box-doacao .titulo-doacao{
+  margin-bottom: 16px;
+  color: rgb(102, 102, 102);
+}
+
+.box-doacao .img-doar{
+  height: 450px;
+  border-radius: 16px;
+}
+
+.faca-uma-doacao .chave-pix{
+  margin-left: 14%;
+  color: rgb(102, 102, 102);
+  font-size: 24px;
+}
